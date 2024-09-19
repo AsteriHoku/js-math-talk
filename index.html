@@ -20,7 +20,7 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section>
+			<section><!--1-->
 				<div class="container">
 					<div class="row justify-content-center align-items-center">
 						<div class="col">
@@ -47,29 +47,33 @@
 					</div>
 				</div>
 			</section>
-			<section>
+
+			<section><!--2-->
 				<div class="row justify-content-center align-items-center">
 					<img src="assets/HackAugusta_logo.png" alt="Hack Augusta logo">
 				</div>
 				<p class="fragment fade-in-then-semi-out" data-fragment-index="1">We believe the world is a
 					better place</p>
-				<p class="fragment fade-in-then-out" data-fragment-index="2">when every community supports its
+				<p class="fragment" data-fragment-index="2">when every community supports its
 					creative class of hackers, artists, makers, and entrepeneurs.</p>
 			</section>
-			<section>
+
+			<section><!--3-->
 				<p class="fragment fade-in-then-semi-out" data-fragment-index="1">hackers, artists, makers, and
 					entrepeneurs</p>
 				<p class="font-italic fragment fade-in-then-semi-out" data-fragment-index="1" style="font-size: 80px;">
 					We are the creative class that make cities worth living in.</p>
-				<p class="fragment fade-in-then-out" data-fragment-index="2">This is STEM</p>
+				<p class="fragment" data-fragment-index="2">This is STEM</p>
 			</section>
-			<section>
-				<h2>Sigma</h2>
+
+			<section><!--4-->
+				<h2 class="fragment" data-fragment-index="2">Sigma</h2>
 				\[\begin{aligned}
 				\sum_{i=1}^{4} i^2
 				\end{aligned} \]
 			</section>
-			<section>
+
+			<section><!--5-->
 				<h2>Sigma</h2>
 				\[\begin{aligned}
 				\sum_{i=1}^{4} i^2 = 1^2 + 2^2 + 3^2 + 4^2 = 30
@@ -77,7 +81,8 @@
 				<!-- \dot{x} &amp; = \sigma(y-x) \\ \dot{y} &amp; = \rho x - y -
 				xz \\ \dot{z} &amp; = -\beta z + xy \end{aligned} \] -->
 			</section>
-			<section data-auto-animate>
+
+			<!-- <section data-auto-animate>
 				<h2 data-id="code-title">Sigma is a for loop</h2>
 				<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
 					let sum = 0;
@@ -85,43 +90,137 @@
 						sum += i*i;
 					}
 				</code></pre>
-			</section>
+			</section> -->
+
 			<section data-markdown>
 				<textarea data-template>
-				  ```js
-				  let sum = 0;
+				```js
+					let sum = 0;
 					for (let i = 1; i <= 4; ++i) {
 						sum += i*i;
 					}
-				  ```
+				```
 				</textarea>
 			</section>
+
+			<section>
+				<div class="row align-items-center">
+					<div class="col-4">
+						\[\begin{aligned}
+						\sum_{i=1}^{4} i^2
+						\end{aligned} \]
+					</div>
+					<div class="col-2 mx-4">=</div>
+					<div class="col-5">
+						<pre class="w-100"><code data-trim data-noescape>
+						let sum = 0;
+						for (let i = 1; i <= 4; ++i) {
+							sum += i*i;
+						}
+					</code></pre>
+					</div>
+				</div>
+				<!-- <textarea data-template>
+					```js
+					let sum = 0;
+					for (let i = 1; i <= 4; ++i) {
+						sum += i*i;
+					}
+					```
+				</textarea> -->
+			</section>
+
 			<section>
 				<div class="container">
-					<div class="row">
-						<span>
+					<div class="row justify-content-around align-items-center">
+						<div class="col-6">
 							\[\begin{aligned}
 							\sum_{i=1}^{4} i^2
 							\end{aligned} \]
-						</span>
-						<span class="fragment highlight-current-blue" data-fragment-index="1">i = 1</span>
-						<span class="fragment highlight-current-blue" data-fragment-index="2">ending at 4</span>
-						<span class="fragment highlight-current-blue" data-fragment-index="3">i^2</span>
+						</div>
+						<div class="col-6">
+							<div class="row justify-content-around align-items-center">
+								<span class="fragment highlight-current-blue" data-fragment-index="1">i = 1</span>
+								<span class="fragment highlight-current-blue" data-fragment-index="2">ending at 4</span>
+								<span class="fragment highlight-current-blue" data-fragment-index="3">i^2</span>
+							</div>
+						</div>
 					</div>
-					<div class="row">
-						<span>
-							<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+					<div class="row justify-content-around align-items-center">
+						<div class="col-6">
+							<pre data-id="code-animation"><code class="hljs javascript w-100" data-trim data-line-numbers>
 								let sum = 0;
-								for (let i = 1; i <= 4; ++i) {
+								for (let i=1; i <= 4; ++i) {
 									sum += i*i;
 								}
 							</code></pre>
-						</span>
-						<span class="fragment highlight-current-blue" data-fragment-index="1">i = 1</span>
-						<span class="fragment highlight-current-blue" data-fragment-index="2">i <= 4</span>
-						<span class="fragment highlight-current-blue" data-fragment-index="3">i^2</span>
+						</div>
+						<div class="col-6">
+							<div class="row justify-content-around align-items-center">
+								<span class="fragment highlight-current-blue" data-fragment-index="1">i = 1</span>
+								<span class="fragment highlight-current-blue" data-fragment-index="2">i <= 4</span>
+										<span class="fragment highlight-current-blue" data-fragment-index="3">i^2</span>
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<section>
+				<p>I get Pi to 1 million digits</p>
+				<pre class="w-100"><code data-trim data-noescape>
+					const PI = require('pi');
+            		const piStr = PI(1000000, false);
+				</code></pre>
+			</section>
+
+			<section>
+				<div class="row">
+					<div class="col-6">
+						<p>For Pi</p>
+						<pre class="w-100"><code data-trim data-noescape>
+							for (let i = 0; i < iterations; i++) {
+								const randomIndex = Math.floor(Math.random() * piStr.length);
+								let randomDigit = piStr.charAt(randomIndex);
+								counts[randomDigit] = (counts[randomDigit] ?? 0) + 1;
+							}
+			
+							let sum = 0n;
+			
+							for (const key in counts) {
+								sum += BigInt(counts[key]);
+							}
+			
+							const avg = sum / BigInt(Object.keys(counts).length);
+				</code></pre>
+					</div>
+					<div class="col-6">
+						<p>For js Math.random()</p>
+						<pre class="w-100"><code data-trim data-noescape>
+							for (let i = 0; i < iterations; i++) {
+								let randomDigit = Math.floor(Math.random() * 10);
+								counts[randomDigit] = (counts[randomDigit] ?? 0) + 1;
+							}
+			
+							let sum = 0n;
+			
+							for (const key in counts) {
+								sum += BigInt(counts[key]);
+							}
+			
+							const avg = sum / BigInt(Object.keys(counts).length);
+						</code></pre>
 					</div>
 				</div>
+			</section>
+
+			<section>
+				<img src="assets/PiConsoleOutputPi.png" alt="Console output Pi">
+				<img src="assets/PiConsoleOutputMath.png" alt="Console output Math">
+			</section>
+
+			<section>
+				<p>And here's your slice of Pi at the end!</p>
+				<img src="assets/PiConsoleOutputTriangle.png" alt="Rainbow triangle of the digits of Pi">
 			</section>
 			<!-- <section>
 				<h2>Layout Helper Examples</h2>
