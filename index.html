@@ -20,7 +20,7 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section><!--1-->
+			<section><!--1 todo all qr codes should also be clickable links for multiplex-->
 				<div class="container">
 					<div class="row justify-content-center align-items-center">
 						<div class="col">
@@ -28,21 +28,6 @@
 						</div>
 						<div class="col">
 							<img src="assets/HackAugusta_logo.png" alt="Hack Augusta logo">
-						</div>
-					</div>
-					<!-- todo redo layout of this to show glitchy hack augusta and splitting up qr codes and text -->
-					<div class="row justify-content-center align-items-center">
-						<div class="col">
-							<p class="fragment fade-in-then-out" data-fragment-index="1">Sarah Matta LinkedIn</p>
-							<img src="assets/LinkedIn01.png" alt="QR code for LinkedIn Sarah Matta">
-						</div>
-						<div class="col">
-							<p class="fragment fade-in-then-out" data-fragment-index="2">Meetup.com Group</p>
-							<img src="assets/QR-Meetup01.png" alt="QR code for Meetup.com/HackAugusta">
-						</div>
-						<div class="col">
-							<p class="fragment fade-in-then-out" data-fragment-index="3">theClubhou.se Discord</p>
-							<img src="assets/QR-Discord01.png" alt="QR code for theClubhou.se Discord">
 						</div>
 					</div>
 				</div>
@@ -66,14 +51,44 @@
 				<p class="fragment" data-fragment-index="2">This is STEM</p>
 			</section>
 
-			<section><!--4-->
+			<section>
+				<!-- todo redo layout of this to show glitchy hack augusta and splitting up qr codes and text -->
+				<div class="row justify-content-center align-items-center">
+					<div class="col">
+						<p class="fragment fade-in-then-out" data-fragment-index="1">Sarah Matta LinkedIn</p>
+						<img src="assets/LinkedIn01.png" alt="QR code for LinkedIn Sarah Matta">
+					</div>
+					<div class="col">
+						<p class="fragment fade-in-then-out" data-fragment-index="2">Meetup.com Group</p>
+						<img src="assets/QR-Meetup01.png" alt="QR code for Meetup.com/HackAugusta">
+					</div>
+					<div class="col">
+						<p class="fragment fade-in-then-out" data-fragment-index="3">theClubhou.se Discord</p>
+						<img src="assets/QR-Discord01.png" alt="QR code for theClubhou.se Discord">
+					</div>
+				</div>
+			</section>
+
+			<section><!---->
+				<h2>Math!</h2>
+			</section>
+
+			<section>
+				<h2>todo confused math meme</h2>
+			</section>
+
+			<section><!---->
+				<h2>Number sense</h2>
+			</section>
+
+			<section><!---->
 				<h2 class="fragment" data-fragment-index="2">Sigma</h2>
 				\[\begin{aligned}
 				\sum_{i=1}^{4} i^2
 				\end{aligned} \]
 			</section>
 
-			<section><!--5-->
+			<section><!---->
 				<h2>Sigma</h2>
 				\[\begin{aligned}
 				\sum_{i=1}^{4} i^2 = 1^2 + 2^2 + 3^2 + 4^2 = 30
@@ -94,6 +109,18 @@
 
 			<section data-markdown>
 				<textarea data-template>
+				```js
+					let sum = 0;
+					for (let i = 1; i <= 4; ++i) {
+						sum += i*i;
+					}
+				```
+				</textarea>
+			</section>
+
+			<section data-markdown>
+				<textarea data-template>
+				## FOR LOOP
 				```js
 					let sum = 0;
 					for (let i = 1; i <= 4; ++i) {
@@ -166,14 +193,58 @@
 			</section>
 
 			<section>
-				<p>I get Pi to 1 million digits</p>
-				<pre class="w-100"><code data-trim data-noescape>
-					const PI = require('pi');
-            		const piStr = PI(1000000, false);
-				</code></pre>
+				<h2>todo example slightly more complex sigma</h2>
 			</section>
 
 			<section>
+				<h2>todo example def more complex sigma</h2>
+			</section>
+
+			<section><!---->
+				<h2>Number sense</h2>
+			</section>
+
+			<section><!---->
+				<h2>Math is logic</h2>
+				<h2>Programming is logic</h2>
+			</section>
+
+			<section><!---->
+				<h2>Random Numbers</h2>
+			</section>
+
+			<section><!--todo qr code and link for https://www.cloudflare.com/learning/ssl/lava-lamp-encryption/-->
+				<h2>cloudflare lava lamps</h2>
+			</section>
+
+			<section><!--todo code highlight 1 step at a time-->
+				<h2 class="fragment fade-in-then-out" data-fragment-index="1">Pi</h2>
+				<div class="fragment fade-in" data-fragment-index="2">
+					<p>I get Pi to 1 million digits</p>
+					<pre class="w-100"><code data-trim data-noescape>
+					const PI = require('pi');
+            		const piStr = PI(1000000, false);
+				</code></pre>
+				</div>
+			</section>
+
+			<section><!--todo do a 1 million iteration to take the million digits of Pi into account in order-->
+				<p>For Pi</p>
+				<pre class="w-100"><code data-trim data-noescape>
+							for (let i = 0; i < iterations; i++) {
+								const randomIndex = Math.floor(Math.random() * piStr.length);
+								let randomDigit = piStr.charAt(randomIndex);
+							}
+				</code></pre>
+				<p>For js Math.random()</p>
+				<pre class="w-100"><code data-trim data-noescape>
+							for (let i = 0; i < iterations; i++) {
+								let randomDigit = Math.floor(Math.random() * 10);
+							}
+				</code></pre>
+			</section>
+
+			<!-- <section>
 				<div class="row">
 					<div class="col-6">
 						<p>For Pi</p>
@@ -211,7 +282,7 @@
 						</code></pre>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<section>
 				<img src="assets/PiConsoleOutputPi.png" alt="Console output Pi">
