@@ -158,36 +158,60 @@
 			</section>
 
 			<section>
-				<div class="container">
-					<div class="row justify-content-around align-items-center">
-						<div class="col-6">
-							\[\begin{aligned}
-							\sum_{i=1}^{4} i^2
-							\end{aligned} \]
+				<div class="row justify-content-around align-items-center">
+					<div class="col-6">
+						<!-- \[\begin{aligned}
+						\sum_{i=1}^{4} i^2
+						\end{aligned} \] -->
+						<div class="row d-flex align-items-end">
+							<div class="col-7 fragment highlight-current-blue text-monospace" data-fragment-index="2">
+								4
+							</div>
+							<div class="col-5">
+							
+							</div>
 						</div>
-						<div class="col-6">
-							<div class="row justify-content-around align-items-center">
-								<span class="fragment highlight-current-blue" data-fragment-index="1">i = 1</span>
-								<span class="fragment highlight-current-blue" data-fragment-index="2">ending at 4</span>
-								<span class="fragment highlight-current-blue" data-fragment-index="3">i^2</span>
+						<div class="row justify-content-center align-items-center">
+							<div class="col-7 m-0 p-0">
+						\[\begin{aligned}
+						\sum_{i=1}^{4} i^2
+						\end{aligned} \]
+							</div>
+							<div class="col-5 d-flex justify-content-start fragment highlight-current-blue" data-fragment-index="3">
+							$$ i^2 $$
+							</div>
+						</div>
+						<div class="row d-flex align-items-start">
+							<div class="col-7 text-monospace fragment highlight-current-blue" data-fragment-index="1">
+								i = 1
+							</div>
+							<div class="col-5">
+				
 							</div>
 						</div>
 					</div>
-					<div class="row justify-content-around align-items-center">
-						<div class="col-6">
-							<pre data-id="code-animation"><code class="hljs javascript w-100" data-trim data-line-numbers>
-								let sum = 0;
-								for (let i=1; i <= 4; ++i) {
-									sum += i*i;
-								}
-							</code></pre>
+					<div class="col-6">
+						<div class="row justify-content-around align-items-center">
+							<span class="fragment highlight-current-blue text-monospace" data-fragment-index="1">i = 1</span>
+							<span class="fragment highlight-current-blue" data-fragment-index="2">ending term 4</span>
+							<span class="fragment highlight-current-blue" data-fragment-index="3">$$ i^2 $$</span>
 						</div>
-						<div class="col-6">
-							<div class="row justify-content-around align-items-center">
-								<span class="fragment highlight-current-blue" data-fragment-index="1">i = 1</span>
-								<span class="fragment highlight-current-blue" data-fragment-index="2">i <= 4</span>
-										<span class="fragment highlight-current-blue" data-fragment-index="3">i^2</span>
-							</div>
+					</div>
+				</div>
+				<div class="row justify-content-around align-items-center">
+					<div class="col-6">
+						<pre data-id="code-animation"><code class="hljs javascript w-100" data-trim data-line-numbers>
+							let sum = 0;
+							for (let i=1; i <= 4; ++i) {
+								sum += i*i;
+							}
+						</code></pre>
+					</div>
+					<div class="col-6">
+						<div class="row justify-content-around align-items-center">
+							<span class="fragment highlight-current-blue text-monospace" data-fragment-index="1">i = 1</span>
+							<span class="fragment highlight-current-blue text-monospace" data-fragment-index="2">i <= 4</span>
+							<span class="fragment highlight-current-blue" data-fragment-index="3">$$ i^2 $$</span>
 						</div>
 					</div>
 			</section>
@@ -432,7 +456,6 @@
 		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
-			width: 1000,
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
 		});
