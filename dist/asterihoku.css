@@ -1,0 +1,62 @@
+.asteri-h1, .asteri-h2, .asteri-h3 {
+    color: #42affa;
+}
+
+.asteri .slides section {
+    text-align: left;
+}
+
+/*.title-slide {*/
+/*    text-align: center !important;*/
+/*}*/
+
+/*.highlight-precision {*/
+/*    color: #ff6b6b;*/
+/*    font-weight: bold;*/
+/*}*/
+
+.highlightasteri {
+    color: #4ecdc4;
+    font-weight: bold;
+}
+
+/*.code-comment {*/
+/*    color: #75715e;*/
+/*}*/
+
+/*.comparison-table {*/
+/*    width: 100%;*/
+/*    border-collapse: collapse;*/
+/*    margin: 20px 0;*/
+/*}*/
+
+/*.comparison-table th,*/
+/*.comparison-table td {*/
+/*    border: 1px solid #666;*/
+/*    padding: 12px;*/
+/*    text-align: left;*/
+/*}*/
+
+/*.comparison-table th {*/
+/*    background-color: #333;*/
+/*    color: #42affa;*/
+/*}*/
+
+.keypoint {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/*.fragment.fade-in-then-out {*/
+/*    display: inline;*/
+/*}*/
+
+/*.binary-highlight {*/
+/*    color: #ff9f43;*/
+/*}*/
+
+/*.decimal-highlight {*/
+/*    color: #6c5ce7;*/
+/*}*/
